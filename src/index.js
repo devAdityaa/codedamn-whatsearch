@@ -4,8 +4,7 @@ const qrcode = require("qrcode-terminal");
 //importing required modules from WWebJS
 const {
     Client,
-    LocalAuth,
-    MessageMedia
+    LocalAuth
 } = require("whatsapp-web.js");
 
 
