@@ -2,5 +2,5 @@
 terminals:
     ['echo one' ]
 # other config
-tabs: ['index.js']
+tabs: ['src/index.js']
 run-button: clear && node index.js && unset PUPPETEER_SKIP_CHROMIUM_DOWNLOAD
