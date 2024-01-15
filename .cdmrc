@@ -1,10 +1,6 @@
 # terminals
 terminals:
-    [
-        'cd client && yarn && yarn start',
-        'cd server && yarn && yarn dev',
-        'echo "We''re ready"',
-    ]
+    ['echo one' ]
 # other config
 tabs: ['index.js']
 run-button: clear && node index.js
