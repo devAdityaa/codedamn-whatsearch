@@ -4,4 +4,3 @@ terminals:
 # other config
 tabs: ['index.js']
 run-button: clear && node index.js
-browser-link: https://wikipedia.org
