@@ -71,19 +71,9 @@ const GoogleSearchAPI= async (API_KEY,query,message) => {
 client.on("message_create", async (message) => {
     
         let msg = message.body;
-        let name = message.notifyName;
-        if(typeof(msg)!=typeof("h"))
-        return
         let msgArray = msg.split(" ");
-
-
         if (msgArray[0] == "/search") {
             query = msg.replace("/search", "");
             GoogleSearchAPI(process.env.API_KEY,msg,message);
-        } else if (msgArray[0] == "/about") {
-            let str =
-                `Hello World ! 😀\nI am WhatsSearch v1.0.0, a WhatsApp bot powered by Google🤖\nI am brought to this world by my father, *Debaditya Banerji*. I hope you will use me well and like me. 🙇🙇🙇\nThe Following are my functionalities: \n1. _/ search < SOMETHING >_ -- *Google search top 5 results*\n2. _/ img_ < SOMETHING > -- *Image search* 
-            `;
-            message.reply(str);
         } 
 });
