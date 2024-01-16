@@ -37,12 +37,6 @@ client.on("ready", () => {
     console.log("Client is ready!");
 });
 
-
-
-//function to get search results from Google 
-const GoogleSearchAPI= async (API_KEY,query,message) => {
-    
-                }
                 
 
 //Listener for new messages with a callback function
