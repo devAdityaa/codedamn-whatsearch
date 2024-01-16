@@ -47,5 +47,12 @@ const GoogleSearchAPI= async (API_KEY,query,message) => {
 
 //Listener for new messages with a callback function
 client.on("message_create", async (message) => {
+        let msg = message.body;
+        let msgArray = msg.split(" ");
+        if (msgArray[0] === "/search") {
+            query = msg.replace("/search", "");
+            //calling Google Search Function with the API key, the received user query and the message object
+            GoogleSearchAPI(process.env.API_KEY,query,message)
+        }
     
 });
