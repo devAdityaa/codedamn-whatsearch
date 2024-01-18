@@ -38,7 +38,7 @@ const GoogleSearchAPI= async (API_KEY,query,message) => {
     let URL = "https://www.googleapis.com/customsearch/v1";
     const params = {
         key: API_KEY,
-        cx: process.env.CX,// "62bc446dbe7b34497",
+        cx: process.env.CX,
         gl: "IN",
         q: query,
     };
